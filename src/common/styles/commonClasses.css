@@ -1,0 +1,41 @@
+.only-desktop {
+    display: block;
+}
+
+.only-mobile {
+    display: none!important;
+}
+
+@media all and (max-width: 767px) {
+    .only-desktop {
+        display: none!important;
+    }
+    
+    .only-mobile {
+        display: block!important;
+    }   
+}
+
+
+.btn-outline {
+    border: 1px solid var(--darkSecondary);
+    padding: 15px;
+    border-radius: 2px;
+    color: var(--darkSecondary);
+    cursor: pointer;
+    transition: transform 0.2s ease-in, border-bottom 0.2s ease-in;
+    border-bottom: 5px solid var(--darkSecondary);
+    background-color: #fff;
+}
+
+.btn-outline:hover {
+    transform: translateY(-2.8px);
+    border-bottom: 3px solid var(--darkSecondary);
+    background-color: var(--lightSecondary);
+}
+
+
+.unstyled-link {
+    color: inherit;
+    text-decoration: underline;
+}

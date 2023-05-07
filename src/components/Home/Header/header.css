@@ -1,0 +1,102 @@
+.page-header {
+    padding: var(--pageMargin);
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+@media all and (max-width: 767px) {
+    .page-header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .page-header-content {
+        flex-direction: column!important;
+        justify-content: flex-start;
+        gap: var(--pageMargin);
+    }
+
+    .page-header-search__input {
+        width: 100%!important;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.page-header-logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.page-header-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--navLinksMargin);
+}
+
+.page-header-link {
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.page-header-link:hover {
+    color: #000;
+}
+
+.page-header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media all and (max-width: 767px) {
+    .page-header-content {
+        align-items: flex-start;
+    }
+
+    .page-header-search {
+        width: 100%!important;
+    }
+}
+
+.page-header-search__input {
+    padding: 10px;
+    background-color: #f2f2f2f2;
+    border: 1px solid #f2f2f2f2;
+    border-radius: 5px;
+    width: 290px;
+    font-size: 15px;
+    font-family: 'GT America';
+    font-weight: 500;
+    outline: none;
+}
+
+.mobile-sidebar {
+    padding: var(--pageMargin);
+    display: none!important;
+    height:0px;
+    transition: display 0.2s ease-in, height 0.2s ease-in;
+}
+
+.mobile-sidebar.open {
+    display: block!important;
+    height: 100%;
+}
+
+.mobile-sidebar-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pageMargin);
+}
+
+.mobile-sidebar-item {
+    color: var(--dark);
+    font-weight: 500;
+}
